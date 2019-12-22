@@ -1,0 +1,16 @@
+{
+  "name": "inputstream",
+  "version": "0.0.1",
+  "description": "An utility class for string analysis",
+  "main": "dist/index.js",
+  "types": "./types",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "watch": "./node_modules/.bin/tsc --watch"
+  },
+  "author": "4erem6a",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.7.4"
+  }
+}
