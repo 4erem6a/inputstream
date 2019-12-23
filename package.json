@@ -6,11 +6,13 @@
   "types": "./types",
   "scripts": {
     "build": "./node_modules/.bin/tsc",
-    "watch": "./node_modules/.bin/tsc --watch"
+    "watch": "./node_modules/.bin/tsc --watch",
+    "docs": "./node_modules/.bin/typedoc --out docs src"
   },
   "author": "4erem6a",
   "license": "MIT",
   "devDependencies": {
+    "typedoc": "^0.15.5",
     "typescript": "^3.7.4"
   }
 }
