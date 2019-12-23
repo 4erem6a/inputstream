@@ -1,6 +1,6 @@
 {
-  "name": "inputstream",
-  "version": "0.0.1",
+  "name": "@4erem6a/inputstream",
+  "version": "0.1.0",
   "description": "String traversal and analysis utility.",
   "main": "dist/index.js",
   "types": "./types",
