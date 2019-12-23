@@ -138,8 +138,8 @@ export class InputStream {
     const line = slice.split("").filter(c => c == "\n").length + 1;
 
     const column = slice.includes("\n")
-      ? slice.slice(slice.lastIndexOf("\n")).length + 1
-      : this.position;
+      ? slice.slice(slice.lastIndexOf("\n")).length
+      : this.position + 1;
 
     return {
       line,
