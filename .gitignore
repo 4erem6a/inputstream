@@ -108,3 +108,6 @@ dist
 
 # Typescript declaration files
 types/
+
+# VSCode worksapce settings
+.vscode/
