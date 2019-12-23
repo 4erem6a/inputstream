@@ -15,6 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/4erem6a/inputstream.git"
   },
+  "homepage": "https://4erem6a.github.io/inputstream",
   "license": "MIT",
   "devDependencies": {
     "typedoc": "^0.15.5",
