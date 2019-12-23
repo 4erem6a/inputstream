@@ -7,7 +7,8 @@
   "scripts": {
     "build": "./node_modules/.bin/tsc",
     "watch": "./node_modules/.bin/tsc --watch",
-    "docs": "./node_modules/.bin/typedoc --mode file --out docs src"
+    "docs": "./node_modules/.bin/typedoc --mode file --out docs src",
+    "prepublishOnly": "yarn build && yarn docs"
   },
   "author": "4erem6a",
   "license": "MIT",
