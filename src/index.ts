@@ -1,2 +1,2 @@
-export { SourcePosition } from "./SourcePosition";
-export { InputStream } from "./InputStream";
+export * from "./SourcePosition";
+export * from "./InputStream";
