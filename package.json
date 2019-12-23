@@ -11,6 +11,10 @@
     "prepublishOnly": "yarn build && yarn docs"
   },
   "author": "4erem6a",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4erem6a/inputstream.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "typedoc": "^0.15.5",
