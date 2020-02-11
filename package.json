@@ -8,7 +8,13 @@
     "build": "./node_modules/.bin/tsc",
     "watch": "./node_modules/.bin/tsc --watch",
     "docs": "./node_modules/.bin/typedoc --mode file --out docs src",
-    "prepublishOnly": "yarn build && yarn docs"
+    "test": "./node_modules/.bin/jest",
+    "prepublishOnly": "yarn build && yarn test"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageDirectory": "./coverage",
+    "collectCoverage": true
   },
   "author": "4erem6a",
   "repository": {
@@ -18,6 +24,7 @@
   "homepage": "https://4erem6a.github.io/inputstream",
   "license": "MIT",
   "devDependencies": {
+    "jest": "^25.1.0",
     "typedoc": "^0.15.5",
     "typescript": "^3.7.4"
   }
