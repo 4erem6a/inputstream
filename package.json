@@ -1,6 +1,6 @@
 {
   "name": "@4erem6a/inputstream",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "String traversal and analysis utility.",
   "main": "dist/index.js",
   "types": "./types",
@@ -11,7 +11,7 @@
     "docs": "./node_modules/.bin/typedoc --mode file --out docs src",
     "lint": "./node_modules/.bin/eslint src/**",
     "test": "./node_modules/.bin/jest --coverageReporters=text-lcov | ./node_modules/.bin/coveralls",
-    "prepublishOnly": "yarn lint && yarn build && yarn test"
+    "prepublishOnly": "yarn lint && yarn buildRelease && yarn test"
   },
   "jest": {
     "testEnvironment": "node",
