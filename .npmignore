@@ -1,3 +1,8 @@
 .vscode/
 src/
 docs/
+scripts/
+.coveralls.yml
+.eslintrc.yml
+.eslintignore
+.tsconfig.json
