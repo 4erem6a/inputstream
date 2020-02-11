@@ -30,7 +30,7 @@ export class InputStream {
   }
 
   /**
-   * Returns the source substring of the specified length staring from current position.
+   * Returns the source substring of the specified length staring from current position with an offset.
    * @param length The number of characters to peek.
    * @param offset The offset relative to the current position.
    */
@@ -91,6 +91,15 @@ export class InputStream {
   }
 
   /**
+   * Sets the current position.
+   * @param position The new position.
+   * @returns New position.
+   */
+  public moveTo(position: number): number {
+    return (this.position = position);
+  }
+
+  /**
    * Sets the current position to 0.
    */
   public reset(): void {
@@ -118,7 +127,7 @@ export class InputStream {
   public checkBounds(offset: number): boolean {
     const position = this.position + offset;
 
-    return position >= 0 && position < this.length;
+    return position >= 0 && !this.checkEof(offset);
   }
 
   /**
