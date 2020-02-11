@@ -10,7 +10,7 @@
     "buildDebug": "yarn clear && ./node_modules/.bin/tsc --inlineSourceMap",
     "docs": "./node_modules/.bin/typedoc --mode file --out docs src",
     "lint": "./node_modules/.bin/eslint src/**",
-    "test": "./node_modules/.bin/jest",
+    "test": "./node_modules/.bin/jest --coverageReporters=text-lcov | ./node_modules/.bin/coveralls",
     "prepublishOnly": "yarn lint && yarn build && yarn test"
   },
   "jest": {
@@ -28,6 +28,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.19.2",
     "@typescript-eslint/parser": "^2.19.2",
+    "coveralls": "^3.0.9",
     "eslint": "^6.8.0",
     "jest": "^25.1.0",
     "typedoc": "^0.15.5",
