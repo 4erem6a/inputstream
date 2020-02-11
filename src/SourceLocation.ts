@@ -1,7 +1,7 @@
 /**
  * Represents position of a symbol in a string.
  */
-export interface SourcePosition {
+export interface SourceLocation {
   /**
    * Vertical symbol position, starting from 1.
    */

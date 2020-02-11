@@ -1,4 +1,4 @@
-import { SourcePosition } from "./SourcePosition";
+import { SourceLocation } from "./SourceLocation";
 
 /**
  * Class for traversing and analyzing strings.
@@ -56,7 +56,7 @@ export class InputStream {
    * The substring includes the characters up to, but not including, the character indicated by end.
    * If this value is not specified, the substring continues to the end of the source string.
    */
-  public slice(start?: number, end?: number) {
+  public slice(start?: number, end?: number): string {
     return this.source.slice(start, end);
   }
 
@@ -93,7 +93,7 @@ export class InputStream {
   /**
    * Sets the current position to 0.
    */
-  public reset() {
+  public reset(): void {
     this.position = 0;
   }
 
@@ -101,14 +101,14 @@ export class InputStream {
    * Checks whether the current position is reached the end of the source string.
    * @param offset The offset relative the current position.
    */
-  public checkEof(offset: number) {
+  public checkEof(offset: number): boolean {
     return this.position + offset >= this.length;
   }
 
   /**
    * Whether the current position is reached the end of the source string.
    */
-  public get isEof() {
+  public get isEof(): boolean {
     return this.checkEof(0);
   }
 
@@ -208,13 +208,14 @@ export class InputStream {
     regexp: RegExp,
     offset: number = 0
   ): RegExpMatchArray | null {
+    // eslint-disable-next-line @typescript-eslint/prefer-regexp-exec
     return this.peekTo(undefined, offset).match(regexp);
   }
 
   /**
-   * The {@link SourcePosition source position} of the current character.
+   * The {@link SourceLocation location} of the current character.
    */
-  public get sourcePosition(): SourcePosition {
+  public get location(): SourceLocation {
     const slice = this.slice(0, this.position);
 
     const line = slice.split("").filter(c => c == "\n").length + 1;
@@ -233,7 +234,7 @@ export class InputStream {
   /**
    * The line containing the current character.
    */
-  public get currentLine() {
+  public get currentLine(): string {
     const leadingLinebreak = this.slice(0, this.position).lastIndexOf("\n");
     const trailingLinebreak = this.slice(this.position).indexOf("\n");
 
