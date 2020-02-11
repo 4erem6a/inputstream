@@ -1,2 +1,2 @@
-export * from "./SourcePosition";
+export * from "./SourceLocation";
 export * from "./InputStream";
