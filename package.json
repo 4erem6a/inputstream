@@ -8,8 +8,9 @@
     "build": "./node_modules/.bin/tsc",
     "watch": "./node_modules/.bin/tsc --watch",
     "docs": "./node_modules/.bin/typedoc --mode file --out docs src",
+    "lint": "./node_modules/.bin/eslint src/**",
     "test": "./node_modules/.bin/jest",
-    "prepublishOnly": "yarn build && yarn test"
+    "prepublishOnly": "yarn lint && yarn build && yarn test"
   },
   "jest": {
     "testEnvironment": "node",
