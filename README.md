@@ -7,7 +7,7 @@
 ![coverage](https://img.shields.io/coveralls/github/4erem6a/inputstream)
 ![licence](https://img.shields.io/github/license/4erem6a/inputstream)
 
-String traversal and analysis utility. [Documentation][docs]
+String traversal and analysis utility. [[Documentation][docs]]
 
 [npm]: https://www.npmjs.com/package/@4erem6a/inputstream
 [docs]: https://4erem6a.github.io/inputstream/
