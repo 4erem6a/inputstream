@@ -111,5 +111,3 @@ types/
 
 # VSCode worksapce settings
 .vscode/
-
-.coveralls.yml
