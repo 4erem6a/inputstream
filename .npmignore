@@ -1,8 +1,10 @@
 .vscode/
-src/
 docs/
-scripts/
+src/
+tests/
 .coveralls.yml
-.eslintrc.yml
 .eslintignore
+.eslintrc.yml
+.gitignore
+.travis.yml
 .tsconfig.json
