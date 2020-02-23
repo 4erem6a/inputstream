@@ -12,7 +12,7 @@
     "lint": "./node_modules/.bin/eslint src/**",
     "test": "./node_modules/.bin/jest",
     "coverage": "./node_modules/.bin/jest --coverage --coverageReporters=text-lcov | ./node_modules/.bin/coveralls",
-    "prepublishOnly": "yarn lint && yarn buildDebug && yarn test && buildRelease",
+    "prepublishOnly": "yarn lint && yarn buildRelease && yarn test",
     "postpublish": "yarn clean"
   },
   "jest": {
