@@ -1,5 +1,3 @@
-<img src="https://badge.langauge.io/4erem6a/inputstream" align="right" />
-
 # inputstream
 
 [![npm version](https://badge.fury.io/js/%404erem6a%2Finputstream.svg)][npm]
